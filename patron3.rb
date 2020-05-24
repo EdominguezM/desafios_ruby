@@ -4,7 +4,7 @@ n.times do |i|
         print "."
     elsif i % 6 == 2 || i % 6 == 3 
         print "*"
-    elsif 
+    else
         print"|"
     end
 end

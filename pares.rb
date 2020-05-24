@@ -6,4 +6,4 @@ while i< ARGV[0].to_i
         suma += i
     end
 end
-puts total= suma
+puts  suma

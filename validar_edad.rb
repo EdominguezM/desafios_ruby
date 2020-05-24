@@ -7,6 +7,5 @@ def validar_edad(edad)
     end
 end
  
-3.times do validar_edad(edad=rand(1..99))
+3.times{validar_edad(edad=rand(1..99))}
 
-end
