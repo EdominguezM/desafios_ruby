@@ -1,4 +1,3 @@
-
 def gen(num)
     i= 0
     letra="a"
@@ -8,5 +7,4 @@ def gen(num)
     end
     print "\n#{i} intentos\n"
 end
-
 gen ARGV[0].to_s

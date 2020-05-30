@@ -2,11 +2,11 @@
 def gen(n)
     i= 1
     print letra="a"
-    while i< n
-        i += 1
+    while i< n 
+        i += 1 
         letra = letra.next
-        print   "#{letra}" 
+         print   letra 
     end
     puts "\n"
 end
-gen(4)
+gen(5)

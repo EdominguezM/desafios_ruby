@@ -1,21 +1,76 @@
-#lee datos
-jugador = ARGV[0].downcase
-computador = rand(0..2)
-status = {0=>"piedra",1=> "papel",2=>"tijera"}
-#convierte el número random en la palabra asignada
-compu= status.fetch(computador)
-if jugador != "piedra" && jugador!= "tijera" && jugador!="papel"
-    puts "argumento inválido. debe ser piedra, papel o tijera"
-    else
-    case (jugador)
-    when jugador 
-        if compu==jugador then puts "Computador juega "+ compu +"\nEmpataste"
-            elsif compu== 'piedra' && jugador== 'tijera' then puts "Computador juega "+ compu +"\nperdiste"
-            elsif compu== 'piedra' && jugador == 'papel' then puts "Computador juega "+ compu +"\nGanaste"
-            elsif compu=='tijera' && jugador== 'papel' then puts "Computador juega "+ compu +"\nperdiste"
-            elsif compu== 'tijera' && jugador == 'piedra' then puts "Computador juega "+ compu +"\nGanaste"
-            elsif compu=='papel' && jugador== 'piedra' then puts "Computador juega "+ compu +"\nperdiste"
-            elsif compu== 'papel' && jugador == 'tijera' then puts "Computador juega "+ compu + "\nGanaste"
-        end
+
+def menu
+    puts
+    puts '1) Piedra'
+    puts '2) Papel'
+    puts '3) Tijeras'
+    puts '4) Salir'
+end
+status = {1=>"piedra",2=> "papel",3=>"tijera",4=>"Salir"}
+print "\n*** Bienvenidos al Cachipún *** \n\n"
+#imprimir en pantalla menú
+print   "Turno Jugador I\n"
+menu
+puts
+#jugador I
+jugador1 = gets.chomp.to_i
+puts
+if jugador1 != 1..3
+    if jugador1 > 4 || jugador1 < 1
+        puts "ingrese valor correcto" 
+        menu
+        puts
+        jugador1 = gets.chomp.to_i
+        puts
+    elsif jugador1 ==4
+        exit
+    end
+    if jugador1==4 
+        exit 
+    end        
+end
+
+#jugador II
+puts 'Turno jugador II'
+menu
+puts
+jugador2 = gets.chomp.to_i
+puts
+if jugador2 != 1..3
+    if jugador2 > 4 || jugador1 < 1
+        puts "ingrese valor correcto" 
+        menu
+        puts
+        jugador2 = gets.chomp.to_i
+        puts
+        elsif jugador1 ==4
+        exit
+    end
+    if jugador2==4 
+        exit 
     end
 end
+
+#Juego
+ gamer1= status.fetch(jugador1)
+ puts "Jugador I: #{gamer1}"
+ puts
+ gamer2= status.fetch(jugador2)
+ puts "Jugador II: #{gamer2}"
+ puts
+#logica
+case (gamer1)
+when gamer1 
+    if gamer2==gamer1 then puts "Resultado: Empate\n"
+        elsif gamer2== 'piedra' && gamer1== 'tijera' then puts "Ganador: Jugador II, #{gamer2} gana a #{gamer1}.\n"
+        elsif gamer2== 'piedra' && gamer1 == 'papel' then puts "Ganador: Jugador I, #{gamer1} gana a #{gamer2}.\n"
+        elsif gamer2=='tijera' && gamer1== 'papel' then puts "Ganador: Jugador II, #{gamer2} gana a #{gamer1}.\n"
+        elsif gamer2== 'tijera' && gamer1 == 'piedra' then puts "Ganador: Jugador I, #{gamer1} gana a #{gamer2}.\n"
+        elsif gamer2=='papel' && gamer1== 'piedra' then puts "Ganador: Jugador II, #{gamer2} gana a #{gamer1}.\n"
+        elsif gamer2== 'papel' && gamer1 == 'tijera' then puts "Ganador: Jugador I, #{gamer1} gana a #{gamer2}.\n"          
+    end
+    puts
+end
+
+
+

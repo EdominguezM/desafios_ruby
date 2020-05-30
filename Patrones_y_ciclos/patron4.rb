@@ -1,11 +1,2 @@
-n = ARGV[0].to_i
-n.times do |i|
-    if i % 3 == 0 
-        print "1"
-    elsif i % 3 == 1
-        print"2"
-    else
-        print"3"
-    end
-end
-print "\n"
+ARGV[0].to_i.times { |i| print i % 3 == 0 ?  "1" : i % 3 == 1 ? "2" : "3"}
+puts

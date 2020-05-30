@@ -1,34 +1,34 @@
 def letra_o(n)
-    # inicio
-    n.times { |i| print "*"}
-    print "\n"
+    # arriba
+    n.times {|i| print "*"} 
+    puts
     #centro
     (n-2).times do
         print "*"
         (n-2).times {|i| print " "}
         print "*"
-        print "\n"
+        puts
     end
-    # final
+    # abajo
     n.times { |i| print "*"}
-    print "\n"
+    puts
 end
 #letra_o(ARGV[0].to_i)
 
 def letra_i(n)
     # inicio
     n.times { |i| print "*"}
-    print "\n"
+    puts
     #centro
     (n-2).times do
         print " "*(n/2)
         print "*" 
         print " "
-        print "\n"
+        puts
     end
     # final
     n.times {|i| print "*"}
-    print"\n"
+    puts
 end
 #letra_i(ARGV[0].to_i)
 
@@ -52,7 +52,6 @@ def letra_z(n)
 end
 #letra_z(ARGV[0].to_i)
 
-
 def letra_x(x)
     n= x-(x/2)
     #arriba
@@ -63,7 +62,7 @@ def letra_x(x)
          1.times {|k| print" "}
         }
         print " *"
-        print"\n"
+        puts
     end
     #abajo
     (n).times do |i| 
@@ -75,7 +74,7 @@ def letra_x(x)
         if i>0 
             print" *"
         end
-        print "\n"     
+        puts    
     end  
 end
 #letra_x(ARGV[0].to_i)
@@ -83,7 +82,7 @@ end
 def numero_cero(n)
     # inicio
     n.times {|i| print "*"}
-        print "\n"
+        puts
         #centro
     (n-2).times do |i|
         print "*"
@@ -91,11 +90,11 @@ def numero_cero(n)
         print "*"
         (n-i).downto(n-(n-4)) {|i| print " "}
         print "*"
-        print "\n"
+        puts
     end
         # final
         n.times {|i| print "*"}
-    print "\n"
+    puts
 end
 #numero_cero(ARGV[0].to_i)
 
@@ -111,13 +110,13 @@ def navidad(n)
     #tronco
     (n/2).times do |i|
         print " "*(n-1)+" *"
-        print "\n"  
+        puts 
     end
     #suelo
     print "  "
     (n-2).times do |i|
         print " *"
     end
-    print "\n" 
+    puts 
 end
 #navidad(ARGV[0].to_i)

@@ -6,4 +6,4 @@ n.times do |i|
         print "."
     end
 end
-print "\n"
+puts

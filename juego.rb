@@ -15,7 +15,7 @@ if jugador != "piedra" && jugador!= "tijera" && jugador!="papel"
             elsif compu=='tijera' && jugador== 'papel' then puts "Computador juega "+ compu +"\nperdiste"
             elsif compu== 'tijera' && jugador == 'piedra' then puts "Computador juega "+ compu +"\nGanaste"
             elsif compu=='papel' && jugador== 'piedra' then puts "Computador juega "+ compu +"\nperdiste"
-            elsif compu== 'papel' && jugador == 'tijera' then puts "Computador juega "+ compu + "\nGanaste"
+            elsif  compu== 'papel' && jugador == 'tijera' then puts "Computador juega "+ compu + "\nGanaste"
         end
     end
 end

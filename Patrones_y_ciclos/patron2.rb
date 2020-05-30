@@ -1,9 +1,2 @@
-n = ARGV[0].to_i
-n.times do |i|
-    if i % 4 == 0 || i % 4 == 1 
-        print "*"
-    else i % 4 == 2 || i % 4 == 3 
-       print"."
-    end
-end
-print "\n"
+ARGV[0].to_i.times {|i| print i%4 == 0 || i%4 == 1 ? '*' : '.'}
+puts
