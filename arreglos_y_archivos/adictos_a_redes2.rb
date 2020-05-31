@@ -11,7 +11,6 @@ def scan_addicts2(min)
             list.push 'mal'
         end
     end
- 
-     list
+    list
 end
 puts scan_addicts2(min)
