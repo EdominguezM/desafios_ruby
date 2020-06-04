@@ -1,7 +1,7 @@
 
 def augment(array,value)
     new_prices= []
-    array.each { |i| new_prices.push (i*value).to_i}
+    array.each { |i| new_prices.push (i*value).to_f}
     new_prices
 end
 

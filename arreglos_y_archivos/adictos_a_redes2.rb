@@ -5,7 +5,7 @@ def scan_addicts2(min)
     n.times do |i| 
         if min[i] < 90 
             list.push 'bien'
-        elsif  min[i] >= 90 &&  min[i] <= 180
+        elsif  min[i] >= 90 &&  min[i] < 180
             list.push 'mejorable'
         else  
             list.push 'mal'

@@ -6,7 +6,7 @@ puts
 print a.map { |i| i.to_f}
 puts
 #select
-print a.select { |x| x < 5 }
+print a.select { |x| x > 5 }
 puts
 #inject
 print a.inject(0){|sum,x| sum + x}
