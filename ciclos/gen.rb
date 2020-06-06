@@ -1,12 +1,16 @@
 # método gen 
 def gen(n)
     i= 1
-    print letra="a"
+    #letra= 'a'
+    print letra ="a"
     while i< n 
         i += 1 
         letra = letra.next
-         print   letra 
+        print   letra
+        #letra
     end
-    puts "\n"
+    #letra
 end
-gen(5)
+
+print gen(5)
+puts

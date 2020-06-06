@@ -5,6 +5,7 @@ def gen(num)
         i += 1
         letra = letra.next
     end
-    print "\n#{i} intentos\n"
+    i
 end
-gen ARGV[0].to_s
+ print gen(ARGV[0].to_s)
+ print " intentos\n"
