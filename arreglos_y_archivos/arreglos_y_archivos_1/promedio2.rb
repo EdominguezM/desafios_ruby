@@ -10,7 +10,6 @@ def compara_arrays(average1, average2)
  average2= (total2/average2.length).ceil(2)
 
  average1 >average2 ?  max.push(average1) :  max.push(average2)
- 
 end
 
 compara_arrays(visitas1, visitas2)
