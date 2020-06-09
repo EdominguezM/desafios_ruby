@@ -6,7 +6,6 @@ def notas_mas_alta(notas)
     n= notas.size
     n.times do |l|
         i = notas[l].chomp.split(',')
-        o= notas.size
         new_array.push i.delete i[0]
         new_array1.push i.max
     end
@@ -19,4 +18,4 @@ def notas_mas_alta(notas)
     final.join("\n")
 end
 
-print notas_mas_alta(file)
+notas_mas_alta(file)

@@ -7,7 +7,6 @@ def chart(datos)
     n.times do |i|
        i.to_i
        print"|" + ("*"*datos[i]*2)+"\n"
-
     end
     print ">"+ ("-" * datos.max*2)+"\n"
     (datos.max).times { |k| print "|#{k+=1}"}
