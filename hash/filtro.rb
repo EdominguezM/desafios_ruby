@@ -4,8 +4,12 @@ ventas ={
     Diciembre: 72000
 }
 
-new_hash={}
-ventas.each do |k, v|
-    puts new_hash[k] = v if v < 70000
+def filter(sales)
+    new_hash={}
+    sales.each do |k, v|
+        puts new_hash[k] = v if v < 70000
+    end
+    new_hash
 end
-puts new_hash
+
+print filter(ventas)
